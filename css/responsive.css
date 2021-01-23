@@ -1,0 +1,330 @@
+@media (max-width: 1172px) {
+  .form_section .select::before {
+    left: 160px;
+  }
+  .form_section .select::after {
+    left: 175px;
+  }
+  .form_section select {
+    width: 200px;
+  }
+  .form_section input {
+    width: 200px;
+  }
+  .form_section textarea {
+    width: 200px;
+  }
+  .form_section button {
+    width: 200px;
+  }
+}
+@media (max-width: 1050px) {
+  .main {
+    height: 800px;
+  }
+
+  .advantage {
+    height: 800px;
+  }
+}
+@media (max-width: 1023px) {
+  .form_section {
+    height: 1100px;
+  }
+  .form_section .form_detailed {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form_section form {
+    height: 900px;
+  }
+  .form_section .row_form-adaptive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form_section .row_form-adaptive select {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-appearance: auto;
+            appearance: auto;
+  }
+  .form_section .row_form-adaptive input {
+    width: 100%;
+  }
+  .form_section .row_form-adaptive textarea {
+    width: 100%;
+  }
+  .form_section .row_form-adaptive button {
+    width: 95%;
+  }
+  .form_section .select {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form_section .select::before {
+    display: none;
+    left: 400px;
+    top: 45px;
+  }
+  .form_section .select::after {
+    display: none;
+    left: 420px;
+    top: 55px;
+  }
+  .form_section .col_textarea {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form_section .col_mail-fone {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form_section .lable_form-detailed {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .main {
+    height: 900px;
+  }
+  .main .buttons_wrp {
+    margin-top: 70px;
+  }
+
+  .title_remont {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .buttons_wrp {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 910px) {
+  .form_section {
+    height: 1200px;
+  }
+
+  .car__brands-section {
+    height: 1400px;
+  }
+  .car__brands-section .col__brands {
+    display: block;
+    padding: 0px;
+  }
+  .car__brands-section .col__brands div {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .car__brands-section .jaguar {
+    display: none;
+  }
+  .car__brands-section .jaguar_respons {
+    display: block;
+  }
+  .car__brands-section .video {
+    width: 95%;
+  }
+
+  .reviews__section {
+    height: 600px;
+  }
+  .reviews__section .swiper-container {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 790px) {
+  .advantage {
+    height: 1100px;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    height: 1250px;
+  }
+  .main .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .main .tel p {
+    text-align: center;
+  }
+
+  .car__brands-section .video {
+    height: 300px;
+  }
+
+  .advantage {
+    height: 800px;
+  }
+}
+@media (max-width: 750px) {
+  .main {
+    height: 1250px;
+    background-pozition: center center;
+  }
+  .main .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .main .tel p {
+    text-align: center;
+  }
+  .main img {
+    margin-top: 30px;
+  }
+
+  .icons_wrp-main {
+    margin-top: 40px;
+  }
+  .icons_wrp-main p {
+    margin-top: 10px;
+  }
+
+  .buttons_wrp {
+    padding: 0;
+    flex-direction: column;
+  }
+  .advantage {
+    padding: 30px;
+  }
+  .advantage .container {
+    margin-top: 80px;
+  }
+
+  .reviews__section .swiper-container {
+    width: 90%;
+  }
+  .reviews__section .swiper-container .swiper-slide {
+    width: 90%;
+  }
+  .reviews__section .swiper-container .swiper-button-prev {
+    display: none;
+  }
+  .reviews__section .swiper-container .swiper-button-next {
+    display: none;
+  }
+
+  .consult__section {
+    padding: 20px 10px 0px 10px;
+  }
+  .consult__section form {
+    width: 90%;
+  }
+  .consult__section form .input_name-wrp {
+    width: 50%;
+  }
+  .consult__section form .input_email-wrp {
+    width: 50%;
+  }
+  .consult__section form input {
+    width: 95%;
+  }
+  .consult__section form button {
+    width: 200px;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 612px) {
+  .advantage {
+    height: 1100px;
+  }
+  .advantage .container {
+    margin-top: 50px;
+  }
+
+  .consult__section {
+    height: 450px;
+  }
+  .consult__section .inputs_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .consult__section .inputs_wrapper input {
+    width: 100%;
+  }
+  .consult__section .inputs_wrapper .input_name-wrp {
+    width: 100%;
+    margin: 0;
+  }
+  .consult__section .inputs_wrapper .input_email-wrp {
+    width: 100%;
+  }
+  .consult__section .inputs_wrapper label {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .title_remont {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 485px) {
+  .advantage {
+    padding: 0px;
+    padding-top: 20px;
+    height: 950px;
+  }
+  .advantage h4 {
+    width: 250px;
+    margin-top: 15px;
+  }
+  .advantage p {
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .car__brands-section {
+    height: 1100px;
+  }
+  .car__brands-section .col-brands-between {
+    display: none;
+  }
+  .car__brands-section .video {
+    margin-top: 40px;
+    height: 200px;
+  }
+  .car__brands-section h3 {
+    font-size: 24px;
+  }
+
+  .consult__section form {
+    padding: 0 10px;
+  }
+  .consult__section form input {
+    height: 40px;
+  }
+  .consult__section form button {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .map-section .adress {
+    width: 70%;
+    margin-left: -35%;
+  }
+
+  .footer .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer img {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer .tel-footer {
+    text-align: center;
+  }
+  .footer .p_2 {
+    text-align: center;
+  }
+}

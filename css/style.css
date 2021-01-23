@@ -1,0 +1,1018 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.substrate h3, .consult__section h2, .reviews__section h2, .car__brands-section h3, .car__brands-section h2, .form_section h2 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1180px;
+  height: 70px;
+  padding: 0 30px;
+}
+
+.header {
+  width: 100%;
+}
+
+.logo {
+  width: 100%;
+  height: 100px;
+}
+.logo img {
+  display: block;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.tel {
+  width: 100%;
+  height: 100px;
+}
+.tel p {
+  color: #FFFFFF;
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.callback .p_2 {
+  color: #D91233;
+  font-size: 16px;
+  margin-top: -10px;
+  text-decoration: underline;
+  text-align: right;
+  cursor: pointer;
+}
+
+.title_remont {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sub-title_remont {
+  color: #FFFFFF;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icons_wrp-main {
+  margin-top: 110px;
+}
+.icons_wrp-main img {
+  display: block;
+  margin: 0 auto;
+}
+.icons_wrp-main p {
+  width: 165px;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  line-height: 22px;
+}
+
+.icon_1-2 p {
+  margin-top: 30px;
+}
+.icon_1-2 img {
+  margin-top: -10px;
+}
+
+.icon_1-1 p {
+  margin-top: 37px;
+}
+
+.icon_1-3 p {
+  margin-top: 37px;
+}
+
+.buttons_wrp {
+  padding: 0 190px;
+  margin-top: 100px;
+}
+.buttons_wrp input {
+  width: 240px;
+  height: 50px;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #FFFFFF;
+  transition: all 0.3s ease 0s;
+}
+.buttons_wrp input:hover {
+  transform: scale(1.05);
+}
+.buttons_wrp p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  width: 155px;
+  display: block;
+  margin: 20px auto;
+}
+
+.button_left {
+  background-color: #D91233;
+}
+
+.button_right {
+  background-color: transparent;
+  border: 2px solid #D91233;
+}
+
+.advantage {
+  width: 100%;
+  height: 624px;
+  padding: 120px;
+}
+.advantage img {
+  display: block;
+  margin: 0 auto;
+}
+.advantage h4 {
+  font-size: 16;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.advantage p {
+  width: 230px;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  line-height: 20px;
+}
+
+.form_section {
+  width: 100%;
+  height: 624px;
+  padding-top: 50px;
+  background-color: #EBEBEB;
+}
+.form_section .container {
+  display: flex;
+  justify-content: center;
+}
+.form_section p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 21px;
+  font-weight: bold;
+}
+.form_section form {
+  width: 80%;
+  height: 340px;
+  border: 5px solid #fff;
+  margin-top: 50px;
+  display: block;
+  padding: 30px 50px;
+}
+.form_section form .lable_form-detailed {
+  font-size: 15px;
+  font-weight: 700;
+}
+.form_section .select {
+  position: relative;
+}
+.form_section .select::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  background-color: #ABABAB;
+  top: 29px;
+  left: 200px;
+  z-index: 1;
+}
+.form_section .select::after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #ababab transparent transparent transparent;
+  position: absolute;
+  z-index: 1;
+  left: 214px;
+  top: 42px;
+}
+.form_section select {
+  display: block;
+  width: 240px;
+  height: 40px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0 5px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.form_section .warning__choose-brand {
+  display: none;
+  color: #C20707;
+  font-weight: 700;
+}
+.form_section .active {
+  display: block;
+}
+.form_section .disactive {
+  display: none;
+}
+.form_section textarea {
+  display: block;
+  width: 240px;
+  height: 120px;
+  padding: 7px 5px;
+}
+.form_section textarea:focus {
+  border: solid 1px #0675FD;
+}
+.form_section input {
+  display: block;
+  width: 240px;
+  height: 40px;
+  padding: 0 5px;
+}
+.form_section input:focus {
+  border: solid 1px #0675FD;
+}
+.form_section .label_input-text {
+  margin-top: 30px;
+}
+.form_section .lable_email {
+  margin-top: 18px;
+}
+.form_section button {
+  width: 240px;
+  height: 50px;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  font-size: 18px;
+  color: #FFFFFF;
+  transition: transform 0.3s ease 0s;
+  background-color: #D91233;
+}
+.form_section button:hover {
+  transform: scale(1.05);
+}
+.form_section button:active, .form_section button:focus {
+  outline: none;
+}
+.form_section .enter__name, .form_section .enter__email {
+  color: #C20707;
+  font-weight: 700;
+  display: none;
+}
+.form_section .active {
+  display: block;
+}
+.form_section .disactive {
+  display: none;
+}
+
+.car__brands-section {
+  height: 1280px;
+  width: 100%;
+  padding-top: 50px;
+}
+.car__brands-section .col__brands {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-top: 60px;
+}
+.car__brands-section img {
+  display: block;
+  margin: 0 auto;
+}
+.car__brands-section img:hover {
+  cursor: pointer;
+}
+.car__brands-section .jaguar_respons {
+  display: none;
+}
+.car__brands-section .h2_wrp {
+  margin-top: 80px;
+}
+.car__brands-section .video {
+  width: 800px;
+  height: 450px;
+  border: 5px solid #BBBBBB;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 10px;
+}
+.car__brands-section .video iframe {
+  width: 100%;
+  height: 100%;
+}
+.car__brands-section .mazda {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .mazda::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/mazda-double.svg);
+}
+.car__brands-section .mazda:hover::before {
+  opacity: 1;
+}
+.car__brands-section .porshe {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .porshe::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/porshe-double.svg);
+}
+.car__brands-section .porshe:hover::before {
+  opacity: 1;
+}
+.car__brands-section .bentley {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .bentley::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/Bentley-double.svg);
+}
+.car__brands-section .bentley:hover::before {
+  opacity: 1;
+}
+.car__brands-section .jeep {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .jeep::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/jeep-double.svg);
+}
+.car__brands-section .jeep:hover::before {
+  opacity: 1;
+}
+.car__brands-section .jaguar_respons {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .jaguar_respons::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/Jaguar-double.svg);
+}
+.car__brands-section .jaguar_respons:hover::before {
+  opacity: 1;
+}
+.car__brands-section .honda {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .honda::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/honda-double.svg);
+}
+.car__brands-section .honda:hover::before {
+  opacity: 1;
+}
+.car__brands-section .land-rover {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .land-rover::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/land-rover-double.svg);
+}
+.car__brands-section .land-rover:hover::before {
+  opacity: 1;
+}
+.car__brands-section .mini {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .mini::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/mini-double.svg);
+}
+.car__brands-section .mini:hover::before {
+  opacity: 1;
+}
+.car__brands-section .volvo {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .volvo::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/volvo-double.svg);
+}
+.car__brands-section .volvo:hover::before {
+  opacity: 1;
+}
+.car__brands-section .volkswagen {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .volkswagen::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/Volkswagen-double.svg);
+}
+.car__brands-section .volkswagen:hover::before {
+  opacity: 1;
+}
+.car__brands-section .bmw {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .bmw::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/bmw-double.svg);
+}
+.car__brands-section .bmw:hover::before {
+  opacity: 1;
+}
+.car__brands-section .mersedes {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .mersedes::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/mersedes-double.svg);
+}
+.car__brands-section .mersedes:hover::before {
+  opacity: 1;
+}
+.car__brands-section .audi {
+  position: relative;
+  cursor: pointer;
+}
+.car__brands-section .audi::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: url(../img/car-brands/audi-double.svg);
+}
+.car__brands-section .audi:hover::before {
+  opacity: 1;
+}
+
+.reviews__section {
+  width: 100%;
+  height: 700px;
+  padding-top: 50px;
+  background-color: #EBEBEB;
+}
+.reviews__section .swiper-container {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  overflow: visible;
+}
+.reviews__section .swiper-slide {
+  border: solid 2px #D91233;
+  overflow: hidden;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__section .swiper-slide p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.reviews__section .swiper-slide span {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+.reviews__section .swiper-slide img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.reviews__section .swiper-slide .three__line-bottom {
+  margin-top: 30px;
+}
+.reviews__section .swiper-pagination {
+  margin: 0 auto;
+  position: relative;
+  margin-top: 20px;
+  z-index: 1000;
+}
+.reviews__section .swiper-button-prev {
+  left: -50px;
+  color: #D91233;
+}
+.reviews__section .swiper-button-next {
+  right: -50px;
+  color: #D91233;
+}
+.reviews__section .swiper-pagination-bullet {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #D91233;
+}
+
+.consult__section {
+  width: 100%;
+  height: 560px;
+  padding-top: 50px;
+  background-color: #DBDBDB;
+}
+.consult__section .warning-form-consult {
+  width: 50%;
+  height: 50px;
+  margin: 10px auto 0px auto;
+  left: 50%;
+  margin-left: -25%;
+  background-color: #FF8D9A;
+  position: absolute;
+  display: none;
+}
+.consult__section .warning-form-consult p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.consult__section p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.consult__section .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.consult__section form {
+  width: 740px;
+  height: 280px;
+  border: solid 5px #fff;
+  padding: 0 40px;
+  position: relative;
+}
+.consult__section form .warning_email_consult {
+  color: red;
+  font-weight: 700;
+  display: none;
+}
+.consult__section form .warning_name_consult {
+  color: red;
+  font-weight: 700;
+  display: none;
+}
+.consult__section form .active {
+  display: block;
+}
+.consult__section .inputs_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.consult__section .lable_2 {
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.consult__section input {
+  display: block;
+  width: 290px;
+  height: 45px;
+  padding: 5px;
+  font-size: 18px;
+}
+.consult__section input:focus {
+  border: solid 1px #0675FD;
+}
+.consult__section button {
+  width: 300px;
+  height: 50px;
+  background-color: #D91233;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  transition: all 0.3s;
+}
+.consult__section button:active, .consult__section button:focus {
+  outline: none;
+}
+.consult__section button:hover {
+  transform: scale(1.02);
+}
+.consult__section .active {
+  display: block;
+}
+
+.map-section {
+  width: 100%;
+  height: 520px;
+  position: relative;
+}
+.map-section .adress {
+  width: 480px;
+  height: 290px;
+  position: absolute;
+  background-color: #FA0B0B;
+  z-index: 2;
+  left: 50%;
+  margin-left: -240px;
+  top: 50px;
+}
+.map-section .adress .contacts__map {
+  font-size: 24px;
+  margin-top: 60px;
+}
+.map-section .adress .adress__map {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.map-section .adress .tel__map {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.map-section .adress p {
+  text-align: center;
+  color: #fff;
+}
+.map-section .adress a {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.footer {
+  width: 100%;
+  height: 110px;
+}
+.footer .row {
+  margin-top: 30px;
+}
+.footer .row .callback {
+  cursor: pointer;
+}
+.footer .row .active {
+  display: block;
+}
+.footer .row .logo-footer {
+  display: block;
+  margin-top: 20px;
+}
+.footer .tel-footer {
+  font-size: 28px;
+  text-align: right;
+  margin-top: 10px;
+}
+.footer .p_2 {
+  color: #D91233;
+  font-size: 16px;
+  margin-top: -10px;
+  text-decoration: underline;
+  text-align: right;
+  cursor: pointer;
+}
+
+.substrate {
+  width: 100%;
+  height: 100vh;
+  background-color: #06080aea;
+  padding-top: 100px;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  animation-name: animate;
+  animation-duration: 1s;
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.substrate .form_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 320px;
+  margin: 0 auto;
+}
+.substrate .form_phone {
+  width: 400px;
+  height: 380px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 250px;
+  padding: 10px;
+  position: relative;
+}
+.substrate h3 {
+  color: #fff;
+}
+.substrate .form_lable {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.substrate input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #4B4B4B;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+.substrate input:focus {
+  border-color: #0675FD;
+}
+.substrate button {
+  width: 100%;
+  height: 50px;
+  background-color: #D91233;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 50px;
+  transition: all 0.3s;
+}
+.substrate button:active, .substrate button:focus {
+  outline: none;
+}
+.substrate button:hover {
+  transform: scale(1.01);
+}
+.substrate span {
+  position: absolute;
+  right: 8px;
+  top: -5px;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.input__phone-validate {
+  border-color: red;
+}
+
+.thanks {
+  width: 400px;
+  height: 100px;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  margin-left: -200px;
+  display: none;
+  z-index: 5;
+  border: 2px solid #000;
+}
+.thanks span {
+  font-size: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: -5px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.thanks p {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.warning {
+  width: 400px;
+  height: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 100px;
+  display: none;
+  z-index: 5;
+}
+.warning span {
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: -5px;
+  cursor: pointer;
+  font-size: 40px;
+  width: 15px;
+  height: 15px;
+}
+.warning p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.active {
+  display: block;
+}
+
+.disactive {
+  display: none;
+}
+
+.red {
+  box-shadow: 0 0 15px red;
+}

@@ -1,0 +1,415 @@
+
+@media(max-width: 1172px) {
+	//Треьтья секция "Форма"
+		.form_section {
+			.select {
+				&::before {
+				left: 160px;
+				}
+				&::after {
+					left: 175px;
+				}
+			}
+		&	select {
+			width: 200px;
+		}
+		&	input {
+			width: 200px;
+		}
+		&	textarea {
+			width: 200px;
+		}
+		&	button {
+			width: 200px;
+		}
+	}
+	
+}// Конец 1172px
+
+@media (max-width: 1050px){
+	// Первая секция==========================================================
+	.main {
+		height: 800px;
+	}
+	// Вторая секция "Преимущества"=====================================================
+	.advantage {
+		height: 800px;
+	}
+	
+}// Конец 1050рх
+
+@media (max-width: 1023px) {
+	// Третья секция форма
+	.form_section {
+		height: 1100px;
+		.form_detailed {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		& form {
+			height: 900px;
+		}
+
+		& .row_form-adaptive {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+				&	select {
+					width: 100%;
+					margin-left: auto;
+					margin-right: auto;
+					appearance: auto;
+				}
+				&	input {
+					width: 100%;
+				}
+				&	textarea {
+					width: 100%;
+				}
+				&	button {
+					width: 95%;
+				}
+		}
+		.select {
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+
+			&::before {
+			display: none;
+			left: 400px;
+			top: 45px;
+			}
+			&::after {
+				display: none;
+				left: 420px;
+				top: 55px
+			}
+		}
+		.col_textarea {
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.col_mail-fone {
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.lable_form-detailed {
+			margin-top: 15px;
+		}
+	}
+
+}// Конец 1023рх
+
+// Первая секция "Главная"==================================================================
+@media(max-width: 1000px){
+	
+	.main {
+		height: 900px;
+		& .buttons_wrp {
+			margin-top: 70px;
+		}
+
+	}
+	.title_remont {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.buttons_wrp {
+		padding: 0 50px;
+	}
+}// Конец 1000px
+
+@media(max-width: 910px) {
+	// Секция подробная форма===========================================================
+
+	.form_section{
+		height: 1200px;
+	}
+	//Секция car__brands-section=========================================================
+ 
+ .car__brands-section {
+ 	height: 1400px;
+	.col__brands {
+	 	display: block;
+	 	padding: 0px;
+	 	& div {
+	 		margin: 0 auto;
+	 		margin-top: 20px;
+	 		// width: 33.33%;
+	 	}
+	}
+	.jaguar {
+		display: none;
+	}
+	.jaguar_respons {
+		display: block;
+	}
+	.video {
+		width: 95%;
+	}
+ }// Конец car__brands-section
+
+ 
+ // Cекция слайдер=====================================================
+	.reviews__section {
+		height: 600px;
+		.swiper-container {
+		  	margin-top: 70px;
+	 }
+ }
+
+ 
+}// Конец 910рх===============================================
+
+@media(max-width: 790px) {
+ .advantage {
+ 	height: 1100px;
+ }
+}
+
+
+@media(max-width: 768px) {
+	.main {
+		height: 1250px;
+		& .logo {
+			display: flex;
+			justify-content: center;
+		}
+
+		& .tel {
+			
+			& p {
+				text-align: center;
+			}
+		}
+	}
+
+	.car__brands-section {
+		.video {
+			height: 300px;
+		}
+	}
+	.advantage {
+ 	height: 800px;
+ }
+}
+
+@media(max-width: 750px) {
+	
+	// Главная==============================================================
+	.main {
+		height: 1250px;
+		background-pozition: center center; 
+		& .logo {
+			display: flex;
+			justify-content: center;
+		}
+
+		& .tel {
+			
+			& p {
+				text-align: center;
+			}
+		}
+
+		& img {
+			margin-top: 30px;
+		}
+
+	}
+
+	.icons_wrp-main {
+		margin-top: 40px;
+		& p {
+			margin-top: 10px;
+		}
+	}
+	.buttons_wrp {
+		padding: 0;
+		flex-direction: column;
+		& input {
+
+		}
+	}
+
+	// Вторая секция "Преимущества"=======================================================
+
+	.advantage {
+			padding: 30px;
+
+			& .container {
+			margin-top: 80px;
+		}
+	}
+	// Секция слайдер=============================================================
+
+	.reviews__section {
+		.swiper-container {
+		width: 90%;
+		.swiper-slide {
+			width: 90%;
+		}
+		.swiper-button-prev {
+			display: none;
+		}
+		.swiper-button-next {
+			display: none;
+		}
+	}
+	}
+
+	
+
+ // Секция формы с консультацией=====================================================
+	.consult__section {
+		padding: 20px 10px 0px 10px;
+		& form {
+			width: 90%;
+			.input_name-wrp {
+				width: 50%;
+			}
+			.input_email-wrp {
+				width: 50%;
+			}
+			& input {
+				width: 95%;
+			}
+			& button {
+				width: 200px;
+				height: 40px;
+				padding: 0 5px;
+				font-size: 16px;
+			}
+		}
+
+	}
+
+} // Конец 750px
+
+@media(max-width: 612px) {
+	// Вторая секция "Преимущетсва========================================================="
+	.advantage {
+		height: 1100px;
+		& .container {
+			margin-top: 50px;
+		}
+	}
+
+	// consult__section ==========================================================
+
+	.consult__section {
+		height: 450px;
+		.inputs_wrapper {
+			flex-direction: column;
+			align-items: center;
+			& input {
+				width: 100%;
+			}
+			.input_name-wrp {
+				width: 100%;
+				margin: 0;
+			}
+			.input_email-wrp {
+				width: 100%;
+			}
+			& label {
+				margin-top: 20px;
+			}
+		}
+	}
+
+
+}// Конец 612px
+
+@media(max-width: 540px) {
+	.title_remont {
+		font-size: 30px;
+		line-height: 40px;
+	}
+} // Конец 540px
+
+
+
+@media (max-width: 485px) {
+	
+	// Вторая секция "Преимущства" ====================================================================
+	.advantage {
+		padding: 0px;
+		padding-top: 20px;
+		height: 950px;
+		& h4 {
+			width: 250px;
+			margin-top: 15px;
+		}
+		& p {
+			width: 250px;
+			margin-top: 10px;
+		}
+  }
+  // car-brands-section=========================================
+  .car__brands-section {
+  	 height: 1100px;
+	  	.col-brands-between {
+	  	   display: none;
+	  }
+	  .video {
+	  	margin-top: 40px;
+	  	height: 200px;
+	  }
+	  & h3 {
+	  	font-size: 24px;
+	  }
+  }
+
+  // consult__section ==========================================================
+
+	.consult__section {
+		& form {
+			padding: 0 10px;
+			& input {
+				height: 40px;
+			}
+			& button {
+			width: 95%;
+			font-size: 14px
+		}
+		}
+		
+	}
+
+  // .map-section=========================
+
+  .map-section {
+	  	.adress {
+	  	width: 70%;
+	  	margin-left: -35%;
+	  }
+  }
+
+  //footer=============================================================
+
+  .footer {
+  	& .row {
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+
+  	}
+  	& img {
+  		display: block;
+  		margin: 0 auto;
+  	}
+  	& .tel-footer {
+  		text-align: center;
+  	}
+  	& .p_2 {
+  		text-align: center;
+  	}
+  }
+  
+}// Конец 485px=======================================================
+
+

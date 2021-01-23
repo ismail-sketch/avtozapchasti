@@ -1,0 +1,1100 @@
+
+// Импорт======================================================
+@import "nullstyle.scss";
+
+
+// // Переменные============================================
+
+// $my_size:20px;
+// $color_1:#EBDC1A;
+
+
+// // Шаблоны====================================================
+
+// %border_all {
+// 	border-bottom: 5px dashed red;
+// } - указать в верстке: @extend %название шаблона
+
+// // Миксины ============================================
+
+// @mixin font_some($my_size) {
+// 	font-size: $my_size;
+// }
+
+// // Вложенности=====================================
+
+// .bum {
+// 	font-size: 30px;
+// 	margin-top: 50px;
+// 	>p {
+// 			color: red;
+// 		}
+// 	.block_text {
+// 			font-size: $my_size;
+// 			span {
+// 			color: $color_1;
+// 		}
+// 	}
+// 	&.bum_big {
+// 		font-size: $my_size;
+// 	}
+// }
+
+// .link {
+// 	color:$color_1;
+// 	text-decoration: underline;
+// 	font-size: $my_size;
+// 	.bum & {
+// 		font-size: $my_size;
+// 	}
+// 	&:hover{
+// 		color: $color_1;
+// 		text-decoration: underline;
+// 	}
+// 	&:active {
+
+// 	}
+// 	&:focus{
+
+// 	}
+// 	&:before {
+// 		content: '';
+// 	}
+// 	&:after {
+// 		content: '';
+// 	}
+// }
+// .link_2 {
+
+// 	@extend %border_all;
+// 	@include font_some(100px);
+// }	
+
+$color_red: #D91233;
+$color_white: #FFFFFF;
+%h2_all {
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+} 
+
+.main {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/back.jpg);
+	background-size: cover;
+   background-repeat: no-repeat;
+}
+.container {
+
+	max-width: 1180px;
+	height: 70px;
+	padding: 0 30px;
+}
+.header {
+	width: 100%;
+	
+}
+.logo {
+	width: 100%;
+	height: 100px;
+	& img {
+	  display: block;
+	  padding-top: 30px;
+	  cursor: pointer;
+	}
+}
+
+.tel{
+	width: 100%;
+	height: 100px;
+	& p{
+		color: $color_white;
+		margin-top: 20px;
+		font-size: 28px;
+		font-weight: 700;
+		text-align: right;
+	}
+}
+.callback{
+	& .p_2 {
+		color: $color_red;
+		font-size: 16px;
+		margin-top: -10px;
+		text-decoration: underline;
+		text-align: right;
+		cursor: pointer;
+	}
+}
+.title_remont {
+	color: $color_white;
+	text-transform: uppercase;
+	margin-top: 40px;
+	font-size: 48px;
+	width: 100%;
+	text-align: center;
+	font-weight: 700;
+}
+.sub-title_remont {
+	color: $color_white;
+	font-size: 28px;
+	text-align: center;
+	margin-top: 20px;
+}
+.icons_wrp-main {
+	margin-top: 110px;
+	& img {
+		display: block;
+		margin: 0 auto;
+	}
+	& p {
+		width: 165px;
+		font-size: 18px;
+		color: $color_white;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		line-height: 22px;
+	}
+}
+
+.icon_1-2 {
+	& p {
+		margin-top: 30px;
+	}
+	& img {
+		margin-top: -10px;
+	}
+}
+
+.icon_1-1 {
+	& p {
+		margin-top: 37px;
+	}
+}
+
+.icon_1-3 {
+	& p {
+		margin-top: 37px;
+	}
+}
+
+.buttons_wrp {
+	padding: 0 190px;
+	margin-top: 100px;
+	& input {
+		width: 240px;
+		height: 50px;
+		border-radius: 30px;
+		display: block;
+		margin: 0 auto;
+		font-size: 18px;
+		color: $color_white;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	& p {
+		color: $color_white;
+		text-align: center;
+		font-size: 14px;
+		width: 155px;
+		display: block;
+		margin: 20px auto;
+	} 
+}
+
+.button_left {
+	background-color: $color_red;
+}
+.button_right {
+	background-color: transparent;
+	border: 2px solid $color_red;
+}
+
+// Вторая секция "Преимущества"==========================================================
+
+.advantage {
+	width: 100%;
+	height: 624px;
+	padding: 120px;
+	& img {
+		display: block;
+		margin: 0 auto;
+	}
+	& h4 {
+		font-size: 16;
+		font-weight: 700;
+		text-align: center;
+		margin-top: 30px;
+		display: block;
+		margin: 0 auto; 
+		margin-top: 20px;
+	}
+	& p {
+		width: 230px;
+		text-align: center;
+		display: block;
+		margin: 20px auto;
+		line-height: 20px;
+	}
+}
+
+// Третья секция "Подробная форма заявки"
+
+.form_section {
+	width: 100%;
+	height: 624px;
+	padding-top: 50px;
+	background-color: #EBEBEB;
+	& .container {
+		display: flex;
+		justify-content: center;
+	}
+	& p {
+		font-size: 16px;
+		text-align: center;
+		margin-top: 21px;
+		font-weight: bold;
+	}
+	& h2 {
+		@extend %h2_all;
+	}
+
+	& form {
+		width: 80%;
+		height: 340px;
+		border: 5px solid #fff;
+		margin-top: 50px;
+		display: block;
+		padding: 30px 50px;
+
+		& .lable_form-detailed {
+			font-size: 15px;
+			font-weight: 700;
+		}
+
+	}
+	& .select {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 30px;
+			background-color: #ABABAB;
+			top: 29px;
+			left: 200px;
+			z-index: 1;
+		}
+		&::after {
+			content: '';
+			display: block;
+			border-style: solid;
+			border-width: 6px 6px 0 6px;
+			border-color: #ababab transparent transparent transparent;
+			position: absolute;
+			z-index: 1;
+			left: 214px;
+			top: 42px;
+		}
+   }
+
+
+   
+	& select {
+		display: block;
+		width: 240px;
+		height: 40px;
+		margin-top: 3px;
+		margin-bottom: 20px;
+		position: relative;
+		appearance: none;
+		-webkit-appearance: none;
+		padding: 0 5px;
+		cursor: pointer;
+		background-color: #fff;
+	}
+
+	.warning__choose-brand {
+		display: none;
+		color: #C20707;
+		font-weight: 700;
+	}
+	.active {
+		display: block;
+	}
+	.disactive {
+	display: none;
+	}
+
+	& textarea {
+		display: block;
+		width: 240px;
+		height: 120px;
+		padding: 7px 5px;
+		&:focus {
+			border: solid 1px #0675FD;
+		}
+	}
+	& input {
+		display: block;
+		width: 240px;
+		height: 40px;
+		padding: 0 5px;
+		&:focus {
+			border: solid 1px #0675FD;
+		}
+	}
+
+	& .label_input-text{
+		margin-top: 30px;
+	}
+	& .lable_email {
+		margin-top: 18px;
+	}
+	 & button {
+	 width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: transform 0.3s ease 0s;
+    background-color: $color_red;
+    &:hover {
+    	transform: scale(1.05);
+    }
+    &:active, &:focus {
+       outline: none;
+     }
+	}
+	.enter__name, .enter__email {
+		color: #C20707;
+		font-weight: 700;
+		display: none;
+	}
+	.active {
+		display: block;
+	}
+	.disactive {
+	display: none;
+	}
+	
+	
+
+}// Конец form_section
+
+
+// Секция "Брэнды"==============================================================
+
+.car__brands-section {
+	height: 1280px;
+	width: 100%;
+	padding-top: 50px;
+	& h2 {
+		@extend %h2_all;
+	}
+	.col__brands {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 100px;
+		margin-top: 60px;
+	}
+	& img {
+		display: block;
+		margin: 0 auto;
+		&:hover {
+			cursor: pointer;		
+		}
+	}
+	.jaguar_respons {
+		display: none;
+	}
+		
+	& h3 {
+		@extend %h2_all;
+	}
+	.h2_wrp {
+		margin-top: 80px;
+	}
+
+	.video {
+		width: 800px;
+		height: 450px;
+		border: 5px solid #BBBBBB;
+		margin: 0 auto;
+		margin-top: 80px;
+		padding: 10px;
+		& iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+	// Марки машин с ховером.......................................................
+	.mazda {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/mazda-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.porshe {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/porshe-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.bentley {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/Bentley-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.jeep {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/jeep-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.jaguar_respons {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/Jaguar-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+	
+	.honda {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/honda-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.land-rover {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/land-rover-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.mini {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/mini-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.volvo {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/volvo-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.volkswagen {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/Volkswagen-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.bmw {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/bmw-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.mersedes {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/mersedes-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+	.audi {
+		position: relative;
+		cursor: pointer;
+		&::before {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			left: 0;
+			z-index: 5;
+			background: url(../img/car-brands/audi-double.svg);
+		}
+		&:hover::before {
+				opacity: 1;
+		}
+	}
+
+}// Конец car__brands-section
+
+// Секция reviews__section============================================================
+
+.reviews__section {
+	width: 100%;
+	height: 700px;
+	padding-top: 50px;
+	background-color: #EBEBEB;
+	& h2 {
+		@extend %h2_all;
+	}
+
+	.swiper-container {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    overflow: visible;
+	}
+	.swiper-wrapper {
+		
+	}
+	.swiper-slide {
+		border: solid 2px $color_red;
+		overflow: hidden;
+		background-color: #fff;
+		// display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& p {
+			text-align: center;
+			font-size: 18px;
+			line-height: 22px;
+			margin-top: 20px;
+		}
+		& span {
+			text-align: center;
+			padding-top: 15px;
+			font-size: 20px;
+			font-weight: 700;
+			display: block;
+		}
+		& img {
+			display: block;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		.three__line-bottom {
+			margin-top: 30px;
+		}
+	}
+	.swiper-pagination {
+		// display: block;
+		margin: 0 auto;
+		position: relative;
+		margin-top: 20px;
+		z-index: 1000;
+	}
+	.swiper-button-prev {
+		left: -50px;
+		// opacity: 0;
+		color: $color_red;
+	}
+	.swiper-button-next {
+		right: -50px;
+		color: $color_red;
+	}
+	.swiper-pagination-bullet {
+		margin: 0 5px;
+		width: 10px;
+		height: 10px;
+		background-color: $color_red;
+	}
+}
+
+// Секция consult__section=====================================================
+.consult__section {
+	width: 100%;
+	height: 560px;
+	padding-top: 50px;
+	background-color: #DBDBDB;
+	& .warning-form-consult{
+		width: 50%;
+		height: 50px;
+		margin: 10px auto 0px auto;
+		left: 50%;
+		margin-left: -25%;
+		background-color: #FF8D9A;
+		position: absolute;
+		display: none;
+		& p {
+			margin-top: 15px;
+			font-size: 20px;
+		}
+	}
+	& h2 {
+		@extend %h2_all;
+	}
+	& p {
+		text-align: center;
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.col {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	& form {
+		width: 740px;
+		height: 280px;
+		border: solid 5px #fff;
+		padding: 0 40px;
+		position: relative;
+		& .warning_email_consult {
+			color: red;
+			font-weight: 700;
+			display: none;
+		}
+		& .warning_name_consult {
+			color: red;
+			font-weight: 700;
+			display: none;
+		}
+		.active {
+		display: block;
+	   }
+	}
+	.inputs_wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	.lable_2 {
+		margin-top: 60px;
+		font-size: 16px;
+		font-weight: 700;
+	}
+	& input {
+		display: block;
+		width: 290px;
+		height: 45px;
+		padding: 5px;
+		font-size: 18px;
+		&:focus {
+			border: solid 1px #0675FD;
+		}
+	}
+	& button {
+		width: 300px;
+		height: 50px;
+		background-color: $color_red;
+		color: white;
+		font-size: 18px;
+		border-radius: 30px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 40px;
+		transition: all 0.3s;
+		&:active, &:focus {
+			outline: none;
+		}
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+	.active {
+		display: block;
+	}
+}
+
+// Секция map-section=========================================================
+
+.map-section {
+	width: 100%;
+	height: 520px;
+	position: relative;
+	.adress {
+		width: 480px;
+		height: 290px;
+		position: absolute;
+		background-color: #FA0B0B;
+		z-index: 2;
+		left: 50%;
+		margin-left: -240px;
+		top: 50px;
+		.contacts__map {
+			font-size: 24px;
+			margin-top: 60px;
+		}
+		.adress__map {
+			margin-top: 40px;
+			font-size: 20px;
+		}
+		.tel__map {
+			margin-top: 30px;
+			font-size: 20px;
+		}
+		& p {
+			text-align: center;
+			color: #fff;
+		}
+		& a {
+			display: flex;
+			justify-content: center;
+			color: #fff;
+			margin-top: 30px;
+			font-size: 20px;
+			text-decoration: underline;
+		}
+	}
+} // Конец map-section
+
+// footer=========================================================================
+
+.footer {
+	width: 100%;
+	height: 110px;
+	& .row {
+		margin-top: 30px;
+		& .callback {
+			cursor: pointer;
+		}
+		.active {
+			display: block;
+		}
+		& .logo-footer {
+			display: block;
+			margin-top: 20px;
+		}
+	}
+	.tel-footer {
+		font-size: 28px;
+		text-align: right;
+		margin-top: 10px;
+	}
+	.p_2 {
+		color: $color_red;
+		font-size: 16px;
+		margin-top: -10px;
+		text-decoration: underline;
+		text-align: right;
+		cursor: pointer;
+	}
+}
+
+
+// Модалка с формой обратного звонка=================================================
+
+.substrate {
+	width: 100%;
+	height: 100vh;
+	background-color: #06080aea;
+	padding-top: 100px;
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	animation-name: animate;
+   animation-duration: 1s;
+   @keyframes animate{
+    from {
+      opacity: 0;
+      transform: scale(0); 
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1); 
+    }
+  }
+
+	.form_wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 420px;
+		height: 320px;
+		margin: 0 auto;
+	}
+	.form_phone {
+		width: 400px;
+		height: 380px;
+		background-color: #fff;
+		border-radius: 10px;
+		margin-top: 250px;
+		padding: 10px;
+		position: relative;
+	}
+
+	& h3 {
+		@extend %h2_all;
+		color: #fff;
+	}
+	.form_lable {
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 30px;
+	}
+	& input {
+		width: 100%;
+		height: 50px;
+		border: 1px solid #4B4B4B;
+		border-radius: 5px;
+		margin-top: 10px;
+		padding: 10px;
+		font-size: 16px;
+		&:focus {
+			border-color: #0675FD;
+		}
+	}
+	& button {
+		width: 100%;
+		height: 50px;
+		background-color: $color_red;
+		color: #fff;
+		border-radius: 30px;
+		margin-top: 50px;
+		transition: all 0.3s;
+		&:active, &:focus {
+			outline: none;
+		}
+		&:hover {
+			transform: scale(1.01);
+		}
+	}
+	& span {
+		position: absolute;
+		right: 8px;
+		top: -5px;
+		font-size: 45px;
+		cursor: pointer;
+	}
+}
+
+
+
+.input__phone-validate {
+	border-color: red;
+}
+
+// Спасибо! Скоро мы вам перезвоним!
+
+.thanks {
+	width: 400px;
+	height: 100px;
+	background-color: #fff;
+	position: fixed;
+	left: 50%;
+	top: 100px;
+	margin-left: -200px;
+	display: none;
+	z-index: 5;
+	border: 2px solid #000;
+	& span {
+		font-size: 40px;
+		display: block;
+		margin-left: auto;
+		margin-right: 15px;
+		margin-top: -5px;
+		cursor: pointer;
+		width: 15px;
+		height: 15px;
+	}
+	& p {
+			text-align: center;
+			margin-top: 40px;
+			font-size: 16px;
+		}
+}
+
+// Введите данные!
+.warning {
+	width: 400px;
+	height: 150px;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: 100px;
+	display: none;
+	z-index: 5;
+	& span {
+		display: block;
+		margin-left: auto;
+		margin-right: 15px;
+		margin-top: -5px;
+		cursor: pointer;
+		font-size: 40px;
+		width: 15px;
+		height: 15px;
+	}
+	& p {
+		text-align: center;
+		font-size: 30px;
+		margin-top: 40px;
+	}
+}
+
+// Вспомогательные классы для js================================
+
+.active {
+	display: block;
+}
+.disactive {
+	display: none;
+}
+
+.red {
+	 box-shadow: 0 0 15px red;
+}
